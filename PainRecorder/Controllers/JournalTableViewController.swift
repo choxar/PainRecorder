@@ -8,7 +8,7 @@
 import UIKit
 import CoreData
 
-class JournalTableViewController: UIViewController, NSFetchedResultsControllerDelegate {
+class JournalViewController: UIViewController, NSFetchedResultsControllerDelegate {
     
     var fetchResultController: NSFetchedResultsController<JournalMO>!
     

@@ -158,7 +158,7 @@ extension NewRecordViewController: UIPickerViewDelegate, UIPickerViewDataSource 
             
             present(alertController, animated: true, completion: nil)
             return
-        }
+        
         
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
             
@@ -173,6 +173,7 @@ extension NewRecordViewController: UIPickerViewDelegate, UIPickerViewDataSource 
             appDelegate.saveContext()
             
         }
+            
         
         dismiss(animated: true, completion: nil)
         
@@ -181,3 +182,4 @@ extension NewRecordViewController: UIPickerViewDelegate, UIPickerViewDataSource 
 }
 
 
+}

@@ -17,7 +17,6 @@
 		4F4F243125E55D64000AEA0E /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4F243025E55D64000AEA0E /* Journal.swift */; };
 		4F4F243425E5603D000AEA0E /* JournalTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4F243325E5603D000AEA0E /* JournalTableViewController.swift */; };
 		4F4F243925E5631B000AEA0E /* JournalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F4F243825E5631B000AEA0E /* JournalTableViewCell.swift */; };
-		4FDBB50625E54597004A233C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBB50525E54597004A233C /* WelcomeViewController.swift */; };
 		4FDBB50A25E54636004A233C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDBB50925E54636004A233C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +33,6 @@
 		4F4F243025E55D64000AEA0E /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
 		4F4F243325E5603D000AEA0E /* JournalTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewController.swift; sourceTree = "<group>"; };
 		4F4F243825E5631B000AEA0E /* JournalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTableViewCell.swift; sourceTree = "<group>"; };
-		4FDBB50525E54597004A233C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		4FDBB50925E54636004A233C /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,7 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				4F3550EC25E5278E00C791C1 /* NewRecordViewController.swift */,
-				4FDBB50525E54597004A233C /* WelcomeViewController.swift */,
 				4F4F243325E5603D000AEA0E /* JournalTableViewController.swift */,
 				4F4F243825E5631B000AEA0E /* JournalTableViewCell.swift */,
 			);
@@ -198,7 +195,6 @@
 				4F3550ED25E5278E00C791C1 /* NewRecordViewController.swift in Sources */,
 				4F3550AC25E516D700C791C1 /* AppDelegate.swift in Sources */,
 				4F4F243125E55D64000AEA0E /* Journal.swift in Sources */,
-				4FDBB50625E54597004A233C /* WelcomeViewController.swift in Sources */,
 				4FDBB50A25E54636004A233C /* Constants.swift in Sources */,
 				4F3550AE25E516D700C791C1 /* SceneDelegate.swift in Sources */,
 				4F4F243425E5603D000AEA0E /* JournalTableViewController.swift in Sources */,

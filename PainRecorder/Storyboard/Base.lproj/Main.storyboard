@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Welcome View Controller-->
+        <!--Journal Table View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="WelcomeViewController" customModule="PainRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="JournalTableViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -26,11 +26,11 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="7"/>
+                                        <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="1qC-AP-vv6" kind="showDetail" id="ViJ-TW-sSf"/>
+                                    <segue destination="L42-dg-3sm" kind="show" id="yYx-3p-lQb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ODL-6t-uHF">
@@ -43,7 +43,7 @@
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="7"/>
+                                        <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -198,7 +198,7 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GRe-Sa-OBc">
                                         <rect key="frame" x="0.0" y="166.33333333333334" width="334" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pain type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pE8-pr-zzR">
@@ -267,39 +267,6 @@
             </objects>
             <point key="canvasLocation" x="2834.7826086956525" y="845.38043478260875"/>
         </scene>
-        <!--Timer-->
-        <scene sceneID="hac-XO-1lu">
-            <objects>
-                <viewController id="K1b-Jr-Zaz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="c8E-gc-QWU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4dJ-NI-vt3"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Timer" image="clock.fill" catalog="system" id="wey-8u-p2W"/>
-                    <navigationItem key="navigationItem" id="zff-bc-585"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7k3-F6-c3q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3771" y="77"/>
-        </scene>
-        <!--Statictics-->
-        <scene sceneID="mJ4-ik-j30">
-            <objects>
-                <viewController id="w6a-fg-oIe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JnJ-42-VAs">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jFT-LI-CPS"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Statictics" image="chart.bar.doc.horizontal.fill" catalog="system" id="6eC-f7-szp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4aw-ZS-Uq5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4619" y="77"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="GrU-HB-ohO">
             <objects>
@@ -317,27 +284,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tj2-LI-PB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="45" y="-869"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="0NO-sL-gss">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="1qC-AP-vv6" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="U6c-zi-63H"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yWm-G1-H0I">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="geM-VI-gUh" kind="relationship" relationship="viewControllers" id="2Bl-8k-Dyw"/>
-                        <segue destination="K1b-Jr-Zaz" kind="relationship" relationship="viewControllers" id="v8U-ft-mSA"/>
-                        <segue destination="w6a-fg-oIe" kind="relationship" relationship="viewControllers" id="1jr-6a-eMZ"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MeW-BS-hKk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2954" y="-869"/>
         </scene>
         <!--Journal-->
         <scene sceneID="6wn-U2-Pic">
@@ -360,11 +306,10 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OCs-xv-XTg"/>
+        <segue reference="YXc-ii-n72"/>
+        <segue reference="yYx-3p-lQb"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
-        <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="newspaper.fill" catalog="system" width="128" height="111"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
