@@ -1,5 +1,5 @@
 //
-//  WelcomeViewController.swift
+//  StaticticsViewController.swift
 //  PainRecorder
 //
 //  Created by elina.zambere on 23/02/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+class StaticticsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
